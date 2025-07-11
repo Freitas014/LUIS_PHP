@@ -15,5 +15,8 @@
     <p align="center"> Hoje é dia 
         <?php echo $data_hoje; ?>
     </p>
+    <br><br><address align="center">
+        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+    </address>
 </body>
 </html>
