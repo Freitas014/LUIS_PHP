@@ -31,5 +31,8 @@
         print "Hoje é seu aniversário de ($age) anos.<Br>"
         //Se necessário para ambiguidade, pode incluir a variável em {}
     ?>
+    <br><br><address align="center">
+        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+    </address>
 </body>
 </html>
