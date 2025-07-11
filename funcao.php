@@ -22,5 +22,8 @@
         echo ("$first<br>");
         echo ("$name<br>");
     ?>
+    <br><br><address align="center">
+        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
+    </address>
 </body>
 </html>
