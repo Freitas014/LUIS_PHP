@@ -1,58 +1,42 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html lang="pt-br">
+<?php 
+session_start(); 
+ include "banco.php";
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
-</head>
+if(isset($_GET['nome']) && $_GET['nome'] != '') {
+    $tarefa = array();
 
-<body>
-    <h1>Gerenciador de Tarefas</h1>
-    <!-- Aqui irá o restante do código -->
-    <form>
-        <fieldset>
-            <legend>Nova Tarefa</legend>
-            <label>Tarefa:
-                <input type="text" name="nome">
-            </label>
-            <input type="submit" value="cadastrar">
-        </fieldset>
-    </form>
-    
-    <?php
-    $lista_tarefas = array();
-        if (isset($_GET['nome'])) {
-            $_SESSION['lista_tarefas'] [] = $_GET['nome'];
-        }
-        $lista_tarefas = array ();
+    $tarefa['nome'] = $_GET['nome'];        
 
-        if (isset($_SESSION['lista_tarefas'])) {
-            $lista_tarefas = $_SESSION['lista_tarefas'];
-            }
-    ?>
-    <!-- Tabela -->
-    <table>
-        <tr>
-            <th>Tarefas</th>
-        </tr>
-        <!-- Código PHP -->
-        <?php foreach ($lista_tarefas as $tarefa) : ?>
-            <tr>
-                <td>
-                    <?php echo $tarefa; ?>
-                </td>
-            </tr>
-        <?php endforeach; ?>
-        <!---------------->
-    </table>
+if(isset($_GET['descricao'])) {
+    $tarefa['descricao'] = $_GET['descricao'];
+} else {
+    $tarefa['descricao'] = '';
+}
 
-    <br><br>
-    <address align="center">
-        Luís Fernando / Estudante / Técnico Desenvolvimento de Sistemas
-    </address>
+if(isset($_GET['prazo'])) {
+    $tarefa['prazo'] = $_GET['prazo'];
+} else {
+    $tarefa['prazo'] = '';
+}
+$tarefa['prioridade'] = $_GET['prioridade'];
 
-</body>
+if(isset($_GET['concluida'])) {
+    $tarefa['concluida'] = $_GET['concluida'];
+} else {
+    $tarefa['concluida'] = '';
+}
+//$_SESSION['lista_tarefas'][] = $tarefa; 
+gravar_tarefa($conexao, $tarefa);
+}
+$lista_tarefas = buscar_tarefas($conexao);
 
-</html>
+include "template.php"
+
+//PARTE DELETADA:
+//if(array_key_exists('lista_tarefas', $_SESSION)) {
+  //  $lista_tarefas = $_SESSION['lista_tarefas']; 
+//} else {
+   // $lista_tarefas = []; 
+//}
+//session_destroy(); 0
+?>
