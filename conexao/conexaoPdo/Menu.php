@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD - Menu</title>
+    <title>CRUD - Painel Clientes</title>
     <link rel="stylesheet" href="style_menu.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -42,6 +42,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="pesquisarCliente.php" class="nav-link text-white">
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                        Pesquisar Clientes
+                    </a>
+                </li>
+                <li>
                     <a href="atualizarCliente.php" class="nav-link text-white">
                         <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
                         Atualizar Clientes
@@ -53,6 +59,7 @@
                         Deletar Clientes
                     </a>
                 </li>
+                
             </ul>
             <hr>
         </div>
@@ -63,7 +70,7 @@
         class="bi" width="30" height="24" aria-hidden="true">
         <use xlink:href="#bootstrap"></use>
         <hr>
-    </svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
+    </svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc - Luís Fernando</span> </div>
     
 </svg></a></li>
 </ul>
