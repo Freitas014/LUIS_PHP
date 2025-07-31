@@ -85,7 +85,7 @@ $clientes = $stmt -> fetchAll();
     class="bi" width="30" height="24" aria-hidden="true">
     <use xlink:href="#bootstrap"></use>
     <hr>
-</svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
+</svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc - Luís Fernando</span> </div>
     
 </svg></a></li>
 </ul>
