@@ -58,6 +58,12 @@ if ($idCliente && is_numeric($idCliente)){
      <form action="processarAtualizacao.php" method="POST">
         <input type="hidden" name="id_cliente" value ="<?=htmlspecialchars($cliente['id_cliente'])?>">
 
+        <label for="nome">Nome:</label>    
+        <input type="text" id="nome" name="nome" value="<?=htmlspecialchars($cliente['nome'])?>" readonly onclick="habilitarEdicao('nome')" class="form-control">
+      
+        <label for="endereco">Endereço:</label>       
+        <input type="text" id="endereco" name="endereco" value="<?=htmlspecialchars($cliente['endereco'])?>" readonly onclick="habilitarEdicao('endereco')" class="form-control">
+
         <label for="telefone">Telefone:</label>
         <input class="form-control" type="text" id="telefone" name="telefone" value ="<?=htmlspecialchars($cliente['telefone'])?>" readonly onclick="habilitarEdicao('telefone')">
         
@@ -115,7 +121,7 @@ if ($idCliente && is_numeric($idCliente)){
     class="bi" width="30" height="24" aria-hidden="true">
     <use xlink:href="#bootstrap"></use>
     <hr>
-</svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> </div>
+</svg> </a> <span id= class="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc - Luís Fernando</span> </div>
     
 </svg></a></li>
 </ul>
