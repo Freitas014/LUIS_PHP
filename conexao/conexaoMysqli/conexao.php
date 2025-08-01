@@ -1,5 +1,5 @@
 <?php
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT)
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
 /*
 
@@ -17,7 +17,7 @@ function conectadb(){
     
     try{
     //Criação da conexão
-    $con = new mysqli($endereco, $usuario, $senha, $banco)
+    $con = new mysqli($endereco, $usuario, $senha, $banco);
 
     //Definição do conjunto de caracteres para evitar problemas de acentuação
     $con->set_charset("utf8mb4");
