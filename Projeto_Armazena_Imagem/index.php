@@ -30,7 +30,7 @@ if (!$resultado) {
     </form>
     <br>
     
-    <table>
+    <table border="1">
         <tr>
             <td align="center">Código</td>
             <td align="center">Evento</td>
