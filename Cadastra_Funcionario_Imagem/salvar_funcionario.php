@@ -39,7 +39,7 @@
 
     // Configuração do Banco de Dados.
     $host = 'localhost';
-    $dbname = 'bd_imagem';
+    $dbname = 'bd_imagens';
     $username = 'root';
     $password = '';
 
@@ -85,3 +85,15 @@
         echo "Erro" .$e->getMessage(); // Mostra o erro se houver
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Imagens</title>
+</head>
+<body>
+    <h2>Lista de Imagens</h1>
+    <a href="consulta_funcionario.php">Listar Funcionários</a>
+</body>
+</html>
